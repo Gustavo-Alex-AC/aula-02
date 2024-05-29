@@ -1,9 +1,14 @@
 <?php 
-     $titulo = "Nosso Projecto - SOGA";
-     $b = 95;
-     $a = 54;
+        $titulo = "Nosso Projecto - SOGA";
+        $b = 125;
+        $a = 4;
+    
+        $fruits = ["Banana", "Orange", "Mango", "Avocado", "u want some?"];
+    
+    /*include "include.php";*/
+    /* Singleton, LazyLoading, Hash */
+    require "require.php";
 
-     $fruits = ["Banana", "Orange", "Mango", "Avocado", "u want some?"]
     ?>
 
 
@@ -17,11 +22,12 @@
 <body>
     <h1>
         
-       
+      <?= $titulo?>
     
     </h1>
+    <h6><?= $c = $b * $a ?></h6>
     <h2>
-        <?=$fruits [4];?>
+        <?=$fruits [0];?>
     </h2>
     <ul>
         <li style = "list-style: none">Fruits</li>
@@ -33,6 +39,7 @@
             endfor;
         ?>
     </ul>
+    <h5> <?= $mensagem;?> </h5>
 </body>
 </html>
 
